@@ -1,0 +1,49 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="M)M7bQ/u(5t=kXULQ2El">Player</variable><variable type="KIND_SpriteKind" id="Znt+floVr#rv8AS{yeRU">Projectile</variable><variable type="KIND_SpriteKind" id="nB,Y}+DaeJ=7*tmZQD#w">Food</variable><variable type="KIND_SpriteKind" id="@aeAT|g:0kd^?jSbx/0:">Enemy</variable><variable id=":EwI:aL;vygYa=ayB9wl">Wonder woman</variable><variable id="T11MGS-gw/ZZDhz)nKD_">mySprite</variable></variables><block type="pxt-on-start" id="#j/MCJDm50%;G`]$.~=u" x="110" y="130"><statement name="HANDLER"><block type="gameSplash" id="maHCOLD-4ad=V;x}yzEV"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><shadow type="text" id="pX,H@b+hrLk!/!3O@TWC"><field name="TEXT">Hola, me llamo Raquel</field></shadow></value><next><block type="variables_set" id="J*jzdJ*v`)Q=ltyL8Ts7"><field name="VAR" id=":EwI:aL;vygYa=ayB9wl">Wonder woman</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="yu@dsZ;-Ktx:Ngp1/2kw"><value name="img"><shadow type="screen_image_picker" id="R9C~TmB]IIgU}E`15+N("><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . 5 . . . . . . . . 
+. . . . . . 5 2 5 . . . . . . . 
+. . . . . 2 2 2 2 2 . . . . . . 
+. . . . . d d d d d . . . . . . 
+. . . . . d . d . d . . . . . . 
+. . . . . d d d d d . . . . . . 
+. . . . . . d d d . . . . . . . 
+. . . . . d 2 2 2 d . . . . . . 
+. . . . . 5 2 5 2 5 . . . . . . 
+. . . . . d 8 8 8 d . . . . . . 
+. . . . . . 8 8 8 . . . . . . . 
+. . . . . . d . d . . . . . . . 
+. . . . . . 2 . 2 . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="Wd){Kh)F;1+KJF)fpY/?"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="@On!z`NMI#SgqXdrgiZ^"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="93(W+W)y0Y02^XQ8]^(p"><field name="VAR" id=":EwI:aL;vygYa=ayB9wl">Wonder woman</field></block></value><value name="vx"><shadow type="math_number" id="rl-My13P];mqB%*+#gic"><field name="NUM">150</field></shadow></value><value name="vy"><shadow type="math_number" id="[TLlMjHFo`j__G#{H8w}"><field name="NUM">150</field></shadow></value><next><block type="gamesetbackgroundcolor" id="-Sjxg}1DJ/Fn]QVr/Y9/"><value name="color"><shadow type="colorindexpicker" id="@2dp90Gg7:^{wiKE/SHZ"><field name="index">11</field></shadow></value><next><block type="tilemap_editor" id="aI~Sa33-y}kwwCADanRp"><field name="tilemap">tiles.createTilemap(hex`1e001e0001040404040404040404040404040404040404040404000000040404040402040404040404040404040404040404040404040404040400050404040402040404040404040404040404040404040404040404040400040404040402040404040404040404040404040404040404040404040400040404040406060606060606060606060606060606060606060606060600040404040400000000000000000000000000000000000000000000000000000004040403030303030a090803030303030303030303030303030303030300040404040404040407000b04040404040404040404040407000000000200040404040404040407000b04040404040404040404040407000000000400000404040404040407000b04040404040404040404040404040404000404000404040404070000000404040404040404040404040404040700000004000404040404070004040c04040404040404040404040404040700040404000404040700000004040404040404040404040404040404000000040400000404040700040404040404040404040404040404040400000004040000040404040700040404040404040404040404040404070000000404000004040404040700040404040404040404070000040404070000040400000004040404040700040404040404040404070000000000000000040000040404040404040700040404040404040404070004040404070000040004040404040404040700000000000404070000000004040404070000040004040404040404040700040407000404070004040404070000000404040004040404040404040700040407000404070004040404070004040400000004040404040404040700040407000404070004040404070000000000040404040404040404040404040407000404070004040404070000000000040404040404040404040404040407000404070004040000000000040404040404040404040404040404040407000000000004000004040000000000000000000000000000040404040404040004000404000404040000040404040404040404040404040404040404040004000404000404040404040404040404040404040404040404040404040004000004000404040404040404040404040404040404040404040404040000000004000404040404040404040404040404040404040404040404040404040404000404040404040404040404040404040404`, img`
+. . . . . . . . . . . . . . . . . . . . . 2 . . . 2 . . . . 
+. . . . . . . . . . . . . . . . . . . . . 2 2 2 . 2 . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . 2 . 2 . . . . 
+. . . . . . . . . . . . . . . . . . 2 2 2 2 2 2 . 2 . . . . 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . 2 2 2 . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . 
+. . . . . 2 2 2 . . . . . . . . . . . . 2 2 2 2 2 2 . 2 . . 
+. . . . . 2 . 2 . . . . . . . . . . . . 2 . . . . 2 . 2 2 . 
+. . . . . 2 . 2 . . . . . . . . . . . . 2 . . . . 2 . . 2 . 
+. . . 2 2 2 . 2 . . . . . . . . . . . . 2 2 2 2 . 2 2 . 2 . 
+. . . 2 . . . 2 . . . . . . . . . . . . . . 2 . . . 2 . 2 . 
+2 2 2 2 . 2 2 2 . . . . . . . . . . . . 2 2 2 . 2 2 2 . 2 . 
+2 2 . . . 2 . . . . . . . . . . . . . 2 2 . . . 2 . . . 2 . 
+2 2 . 2 2 2 . . . . . . . . . . . . 2 2 . . . 2 2 . . 2 2 . 
+. 2 . 2 . . . . . . . . 2 2 2 2 . . 2 . . . 2 2 . . 2 2 . . 
+. 2 . 2 . . . . . . . . 2 . . 2 2 2 2 . . 2 2 . . . 2 . . . 
+. 2 . 2 . . . . . . . . 2 . . . . . . . . 2 . . 2 2 2 . . . 
+. 2 . 2 2 2 2 2 . 2 2 2 2 . 2 2 2 2 . . . 2 . 2 2 . . . . . 
+. 2 . . . . . 2 . 2 . . . . 2 2 2 2 . . . 2 . 2 . . . . . . 
+. 2 . 2 2 2 . 2 . 2 . 2 2 2 2 2 . . . 2 2 2 . 2 . . . . . . 
+. 2 . 2 . 2 . 2 . 2 . 2 . . 2 2 . 2 2 2 . . . 2 . . . . . . 
+. 2 . 2 . 2 . 2 . 2 . 2 . . 2 2 . . . . . 2 2 2 . . . . . . 
+. 2 2 2 . 2 . 2 . 2 . 2 2 2 2 2 . . . . . 2 . . . . . . . . 
+. . . . . 2 . 2 2 2 . 2 2 . . . . . 2 2 2 2 2 2 2 2 2 2 2 2 
+. . . . . 2 . . . . . 2 . . 2 2 . . . . . . . . . . . . . . 
+. . . . . 2 2 . . . . 2 . 2 2 2 . . 2 2 2 2 2 2 2 2 2 2 2 2 
+. . . . . . 2 . . . . 2 . 2 . . . . . . . . . . . . . . . . 
+. . . . . . 2 . . . . 2 . 2 . . . . . . . . . . . . . . . . 
+. . . . . . 2 . . . . 2 . 2 . . . . . . . . . . . . . . . . 
+. . . . . . 2 2 2 2 2 2 . 2 . . . . . . . . . . . . . . . . 
+`, [myTiles.transparency16,sprites.dungeon.darkGroundNorthWest0,sprites.dungeon.darkGroundWest,sprites.dungeon.darkGroundNorth,sprites.dungeon.darkGroundCenter,sprites.dungeon.darkGroundEast,sprites.dungeon.purpleOuterNorth0,sprites.dungeon.purpleOuterWest1,sprites.dungeon.purpleOuterNorthEast,sprites.dungeon.purpleOuterNorth1,sprites.dungeon.purpleOuterNorthWest,sprites.dungeon.purpleOuterEast0,sprites.dungeon.purpleOuterSouthWest], TileScale.Sixteen)</field><next><block type="mapplaceonrandomtile" id="0qj+|rQ*ZXb[w7roC!2b"><value name="sprite"><block type="variables_get" id="=]C6Y,EoX@^7)im?UQ5r"><field name="VAR" id=":EwI:aL;vygYa=ayB9wl">Wonder woman</field></block></value><value name="tile"><shadow type="tileset_tile_picker" id="ed`Id-#52~Exx`(RBEfU"><field name="tile">myTiles.transparency16</field></shadow></value><next><block type="camerafollow" id="!Sr8F:x0X%|(Og0HDX}^"><value name="sprite"><block type="variables_get" id="(qx@y-Hh^sI!k;BL]@f%"><field name="VAR" id=":EwI:aL;vygYa=ayB9wl">Wonder woman</field></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="keyonevent" id="k9YjBMvXm[,(bsf@oW=_" x="150" y="610"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="startEffectOnSprite" id="3#fhZNE/c@Fx|D=qX#h3"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><field name="effect">effects.confetti</field><value name="sprite"><block type="variables_get" id="b,/YHe$7[*@s.w|^w7D%"><field name="VAR" id=":EwI:aL;vygYa=ayB9wl">Wonder woman</field></block></value></block></statement></block></xml>
